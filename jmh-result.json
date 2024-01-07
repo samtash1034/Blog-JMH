@@ -1,0 +1,110 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.sam.jmh.StreamVsLoopBenchmark.sumUsingLoop",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/sam_huang/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/sam_huang/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/233.11799.241/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55361:/Users/sam_huang/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/233.11799.241/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.7",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.7+7-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "3 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 9503608.446134692,
+            "scoreError" : 5516077.509137619,
+            "scoreConfidence" : [
+                3987530.936997073,
+                1.5019685955272311E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8414942.854748603,
+                "50.0" : 9147615.219512194,
+                "90.0" : 1.19865267250996E7,
+                "95.0" : 1.19865267250996E7,
+                "99.0" : 1.19865267250996E7,
+                "99.9" : 1.19865267250996E7,
+                "99.99" : 1.19865267250996E7,
+                "99.999" : 1.19865267250996E7,
+                "99.9999" : 1.19865267250996E7,
+                "100.0" : 1.19865267250996E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    9294733.48606811,
+                    9147615.219512194,
+                    1.19865267250996E7,
+                    8674223.945244957,
+                    8414942.854748603
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "com.sam.jmh.StreamVsLoopBenchmark.sumUsingStream",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/Users/sam_huang/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-javaagent:/Users/sam_huang/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/233.11799.241/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55361:/Users/sam_huang/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/233.11799.241/IntelliJ IDEA.app/Contents/bin",
+            "-Dfile.encoding=UTF-8"
+        ],
+        "jdkVersion" : "17.0.7",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.7+7-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "3 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4.944190087163212E7,
+            "scoreError" : 2.303056326594499E7,
+            "scoreConfidence" : [
+                2.641133760568713E7,
+                7.247246413757712E7
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4.090436148648649E7,
+                "50.0" : 5.048364305E7,
+                "90.0" : 5.718652043396226E7,
+                "95.0" : 5.718652043396226E7,
+                "99.0" : 5.718652043396226E7,
+                "99.9" : 5.718652043396226E7,
+                "99.99" : 5.718652043396226E7,
+                "99.999" : 5.718652043396226E7,
+                "99.9999" : 5.718652043396226E7,
+                "100.0" : 5.718652043396226E7
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4.090436148648649E7,
+                    4.7184084625E7,
+                    5.048364305E7,
+                    5.718652043396226E7,
+                    5.145089476271187E7
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
